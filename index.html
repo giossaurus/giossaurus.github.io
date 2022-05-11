@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Lista Animada de Howl</title>
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header box">
+        <h1>Minha lista de tarefas</h1>
+        <form id="nova-tarefa-form">
+            <input
+                type="text"
+                id="nova-tarefa-input"
+                placeholder="O que você vai fazer hoje?" />
+            <input
+                type="submit"
+                id="nova-tarefa-submit"
+                value="Adicionar" /> <
+        </form>      
+    </header>
+    <main>
+        <section class="lista-tarefas">
+            <h2>Tarefas do dia:</h2>
+
+            <div id="tarefas">
+                <!--<div class="tarefa">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="Minha tarefa do dia"
+                            readonly/>
+                    </div>
+
+                <div class="acoes">
+                    <button class="editar">Editar</button>
+                    <button class="deletar">Deletar</button> 
+                </div>--> 
+
+            </div>
+        </section>
+    </main>
+
+    <video id="videobg"autoplay muted loop>
+        <source src="assets/videos/fundo_ghibli_loop.mp4" type="video/mp4">
+    </video>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

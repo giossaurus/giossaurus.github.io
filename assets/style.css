@@ -1,0 +1,193 @@
+
+:root {
+  --escuro: #374151;
+  --mais-escuro: #1f291f;
+  --muito-escuro-mesmo: #132020;
+  --cinzento: #6b7280;
+  --claro:#eee;
+  --rosa:#ec4899;
+  --roxo: #8b5cf6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+
+#videobg {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  opacity: 87%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+header h1 {
+  color: var(--roxo);
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  
+}
+
+
+#nova-tarefa-form {
+  display: flex;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#nova-tarefa-input {
+  flex: 1 1 0%;
+  background-color: var(--claro);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#nova-tarefa-input::placeholder {
+  color: var(--roxo);
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+#nova-tarefa-submit {
+  color: var(--claro) ;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#nova-tarefa-submit:hover {
+  opacity: 0.8;
+}
+
+#nova-tarefa-submit:active {
+  opacity: 0.5;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lista-tarefas {
+  padding: 1rem;
+}
+
+.lista-tarefas h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--roxo);
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#tarefas .tarefa {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--claro);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tarefa .content {
+  flex: 1 1 0%;
+}
+
+.tarefa .content .text {
+  color: black;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.tarefa .content .text:not(:read-only) {
+  color: var(--rosa);
+}
+
+.tarefa .acoes {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.botoes-acoes {
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tarefa .acoes button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: 0.4s;
+  color: crimson;
+}
+
+.tarefa .acoes button:hover {
+  opacity: 0.8;
+}
+
+.tarefa .acoes button:active {
+  opacity: 0.5;
+}
+
+.tarefas .acoes .editar {
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tarefa .acoes .deletar {
+  background-image: linear-gradient(to right, var(--rosa), var(--roxo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
